@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: darkgray;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        fieldset {
+          height: 900px;
+          width: 500px;
+          border: none;
+          padding-left: 50px;
+          border-radius: 15px;
+          margin-top: 90px;
+          box-shadow: 5px 5px 5px rgb(127, 150, 168);
+          background-image: radial-gradient(rgb(26, 136, 151), rgb(158, 88, 158));
+        }
+        input[type="text"] {
+          height: 26px;
+          box-shadow: 5px 5px 5px black;
+          width: 190px;
+          border-radius: 5px;
+          border: none;
+          margin-left: 20px;
+        }
+        input[type="email"] {
+          height: 26px;
+          box-shadow: 5px 5px 5px black;
+          width: 190px;
+          border-radius: 5px;
+          border: none;
+          margin-left: 20px;
+          position: relative;
+          left: 30px;
+        }
+        input[type="tel"] {
+          height: 26px;
+          box-shadow: 5px 5px 5px black;
+          width: 190px;
+          border-radius: 5px;
+          border: none;
+          
+          position: relative;
+          
+        }
+        input[type="password"] {
+          height: 26px;
+          box-shadow: 5px 5px 5px black;
+          width: 190px;
+          border-radius: 5px;
+          border: none;
+          
+          position: relative;
+          left: 40px;
+        }
+        input[type="date"] {
+          height: 26px;
+          box-shadow: 5px 5px 5px black;
+          width: 190px;
+          border-radius: 5px;
+          border: none;
+          margin-left: 20px;
+          position: relative;
+          left: 60px;
+        }
+        
+  
+        
+        h2 {
+          color: darkgrey;
+          font-family: "Teko", sans-serif;
+          font-weight: bolder;
+          font-style: normal;
+          font-size: 40px;
+          text-shadow: 5px 5px 5px black;
+        }
+        label {
+          font-size: large;
+        }
+        legend {
+          font-size: 22px;
+          font-style: oblique;
+        }
+  
+        div {
+          height: 90px;
+          width: 100%;
+          background-image: linear-gradient(rgb(230, 176, 207)50%, rgb(32, 119, 218));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+        }
+        ol {
+          width: 100%;
+          height: 70px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          list-style: none;
+        
+        }
+        li {
+          height: 30px;
+          width: 90px;
+          background-color: beige;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px black;
+        }
+        li:hover {
+          height: 30px;
+          width: 90px;
+          background-color: rgba(0, 0, 0, 0.396);
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px white;
+        }
+        a:hover {
+          color: white;
+        }
+        a {
+          text-decoration-line: none;
+          color: blue;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+   <!-- nav begins -->
+   <div>
+    <ol>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Login</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">More</a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Form -->
+  <form action="" method="get">
+    <fieldset>
+        <center>
+      <legend>Registration form</legend>
+    </center>
+    <center>
+        <h2>JOB APPLICATION</h2>
+      </center>
+
+     
+      <br /><br />
+      <label for="fname">First Name :</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname "
+        placeholder="Enter ur fname"
+        required
+        maxlength="10"
+      />
+      <br /><br />
+
+      <label for="lname">Last Name :</label>
+      <input
+        type="text"
+        id="lname"
+        placeholder="Enter ur lname"
+        required
+      /><br /><br />
+
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter ur email"
+        maxlength="5"
+        required
+      />
+      <br /><br />
+
+      <label for="">Address :</label><br />
+      <br />
+      <textarea name="" id="" rows="5" cols="50">Enter ur Address</textarea
+      ><br /><br />
+
+      <label for="">Phone Number :</label>
+      <input
+        type="tel"
+        maxlength="10"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      /><br /><br />
+
+      <label for="password">Password :</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="create password"
+        required
+        pattern="[a-zA-Z0-9] {5}"
+        maxlength="5"
+      />
+      <br /><br />
+
+      <label for="">DOB:</label>
+      <input type="date" /><br /><br />
+
+      <label for="gender">Gender :</label>
+      <input type="radio" name="gender" /> MALE
+      <input type="radio" name="gender" />FEMALE <br /><br />
+
+      <label for="">Skin colour :</label>
+      <input type="color" /><br /><br />
+
+      <label for="">Languages :</label>
+      English :<input type="range" /> Telugu : <input type="range" /> Kannada
+      : <input type="range" /> <br /><br />
+
+      <label for="">State :</label>
+      <select name="" id="">
+        <option value="ap">AP</option>
+        <option value="ts">TS</option>
+        <option value="kar">KARNATAKA</option>
+        <option value="tam">TAMILANADU</option>
+      </select>
+      <br /><br />
+      <label for="">Skills :</label>
+      <input type="checkbox" />HTML <input type="checkbox" />CSS
+      <input type="checkbox" />JAVASCRIPT <input type="checkbox" />JAVASCRIPT
+      <input type="checkbox" />MYSQL <br /><br />
+
+      <label for="">Upload Resume :</label>
+      <input type="file" /><br /><br />
+
+      <button>Submit</button>
+      <button>Cancel</button>
+    </fieldset>
+  </form> 
+</body>
+</html>
